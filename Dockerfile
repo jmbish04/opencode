@@ -19,7 +19,7 @@ RUN set -eux; \
     dpkg -i /tmp/cloudflared.deb; \
     rm -f /tmp/cloudflared.deb; \
     \
-    VERSION=1.4.3 curl -fsSL https://opencode.ai/install | bash -s -- --no-modify-path; \
+    curl -fsSL https://opencode.ai/install | bash -s -- --no-modify-path; \
     mv /root/.opencode/bin/opencode /usr/local/bin/opencode; \
     \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
