@@ -9,10 +9,11 @@
   "keep_vars": true,
   "observability": {
     "traces": {
-      "enabled": true,
+      "enabled": false,
     },
     "logs": {
       "enabled": true,
+      "invocation_logs": false
     },
   },
   "placement": {
